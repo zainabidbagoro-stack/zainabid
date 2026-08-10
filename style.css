@@ -1,0 +1,117 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+
+}
+
+.container
+{
+   width: 100%;
+   height: 100vh;
+   background: blanchedalmond;
+}
+
+.navbar
+{
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+}
+
+nav ul li
+
+{
+ list-style: none;
+ display: inline-block;
+ margin: 0 100px;
+ position: relative;
+}
+
+nav ul li a
+
+{
+  text-decoration: none;
+  color:orangered;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+nav ul li::after
+
+{
+  content: " ";
+  width: 0%;
+  height: 3px;
+  background: black;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+nav ul li:hover::after
+
+{
+   width: 100%;
+}
+
+
+
+.content
+{
+   width: 80%;
+   height: 75vh;
+   border: 1px solid black;
+   margin: auto;
+   display: flex;
+   padding: 5px;
+}
+
+.text-content
+{
+    width: 60%;
+    height: 75vh;
+}
+
+.text-content h1
+{
+  background:blanchedalmond;
+  padding: 4px 8px;
+  color:orange;
+  font-weight: 800;
+  letter-spacing: 4px;
+  border-radius: 4px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.text-content h1:hover
+
+{
+  color: orangered;
+}
+
+.text-content h1
+{
+    margin: 20px 0px 0 20px;
+}
+
+.text-content p
+{
+    margin: 20px 0 0 20px;
+}
+
+.image-content
+{
+    width: 40%;
+    height: 75vh;
+}
+
+.image-content img
+{
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
+}
